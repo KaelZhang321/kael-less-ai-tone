@@ -1,0 +1,32 @@
+[
+  {
+    "repo": "https://github.com/op7418/humanizer-zh.git",
+    "commit": "f4518a8eab97b8bfebc66a89d34320a89bef6930",
+    "license_verified": true,
+    "used_as": "editorial research; upstream scripts not executed or redistributed"
+  },
+  {
+    "repo": "https://github.com/LifelongLazyLearner/qu-ai-wei.git",
+    "commit": "1d32e803f091ec90808a69683ebf49e8a970a5e7",
+    "license_verified": true,
+    "used_as": "editorial research; upstream scripts not executed or redistributed"
+  },
+  {
+    "repo": "https://github.com/adewale/anti-slop-writing.git",
+    "commit": "262db2d1e387de148a17bff9b39f3144915b0acb",
+    "license_verified": true,
+    "used_as": "editorial research; upstream scripts not executed or redistributed"
+  },
+  {
+    "repo": "https://github.com/manavmishra/ZeroSlop.git",
+    "commit": "42e4c952de7216ae915270b8cb0658ec08857650",
+    "license_verified": true,
+    "used_as": "editorial research; upstream scripts not executed or redistributed"
+  },
+  {
+    "repo": "https://github.com/oubigfa/de-ai-prompt-enhancer-writer-booster-skill.git",
+    "commit": "59eafed6c9ebee0cce142e2ea54aab41014afbe9",
+    "license_verified": false,
+    "used_as": "editorial research; upstream scripts not executed or redistributed"
+  }
+]

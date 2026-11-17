@@ -1,16 +1,27 @@
 # Kael Less AI Tone
 
-A conservative Chinese editing skill for removing explicitly defined AI-writing tells without rewriting the author’s voice.
+Version 2.0: Chinese editorial revision with fact preservation, protected Markdown and author voice. The legacy whitelist remains available in strict mode.
 
 ## Core promise
 
 This is a whitelist-based post-editing workflow:
 
-- Only rules explicitly listed in `SKILL.md` may trigger a rewrite.
-- Unmatched text remains unchanged.
-- Article structure, facts, numbers, dates, citations, quotations, links, caveats, and paragraph order are preserved.
+- Four scopes: audit, polish, editorial (default for humanizing), and strict legacy whitelist.
+- Editorial mode reviews paragraph purpose and repeated information, not just banned words.
+- Facts, numbers, dates, citations, quotations, links and caveats are protected. Headings and column structure stay fixed unless explicitly authorized.
+- Paragraphs may be merged inside a section without losing independent information.
 - Code blocks, foreign-language passages, quotations, dialogue, and normal question sentences are protected.
 - When a possible change is ambiguous, keep the original.
+
+## V2 workflow
+
+Read the complete draft, freeze the information ledger, review paragraph purpose, edit once, compare facts and protected content, then perform one bounded fresh-read pass. Never add fake experience or slang to manufacture personality.
+
+Run `python3 scripts/editorial_qa.py source.md revision.md --json` for offline mechanical checks. These checks cannot prove semantic equivalence or identify AI authorship.
+
+Run tests: `python3 -m unittest discover -s tests -v`.
+
+Research scope and source-review decisions are in `references/research-review.md`; this is not an exhaustive Internet inventory.
 
 ## Included checks
 
